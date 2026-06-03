@@ -1,0 +1,6 @@
+what is react and how can we use it in our project
+note about cdn links
+what is crossorigin in cnd links
+what happens if we create an element inside root element and then render something inside root using react root.render() method
+we can use react in the small portion of our project also
+
