@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Basic React",
+  "homepage": "https://github.com/ajiteshsharma-hub/React#readme",
+  "bugs": {
+    "url": "https://github.com/ajiteshsharma-hub/React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajiteshsharma-hub/React.git"
+  },
+  "license": "ISC",
+  "author": "Ajitesh Sharma",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "browerList": [
+    "last 2 versions"
+  ]
+}

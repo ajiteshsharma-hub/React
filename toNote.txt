@@ -5,6 +5,26 @@ what happens if we create an element inside root element and then render somethi
 we can use react in the small portion of our project also
 
 There are two types of dependencies that we can install
-1. dev dependencies: It is required in development phase
+1. dev dependencies: It is required in development phase we use npm install -D to install dev dependencies
 2. normal dependencies: It is used in production aslo
+
+Integrity has a hash which ensures that the version of npm/react running on our machine should go on production also
+Transitive dependencies
+npx vs npm
+
+Parcel- 
+dev build
+Local server 
+HMR - Hot Module server
+File watching algorithm - written in C++
+Caching - Faster Builds
+Image optimization
+Minification
+Bundling
+Compress
+Consistent Hashing
+Differentiate Bundling - to support older browsers
+Diagnostic
+Tree shaking - it will remove unused code
+
 

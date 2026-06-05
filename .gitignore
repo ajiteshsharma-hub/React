@@ -1,1 +1,4 @@
-toNote.txt
+node_modules
+./toNote.txt
+dist
+.parcel-cache
