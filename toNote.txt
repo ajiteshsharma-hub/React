@@ -4,3 +4,7 @@ what is crossorigin in cnd links
 what happens if we create an element inside root element and then render something inside root using react root.render() method
 we can use react in the small portion of our project also
 
+There are two types of dependencies that we can install
+1. dev dependencies: It is required in development phase
+2. normal dependencies: It is used in production aslo
+
