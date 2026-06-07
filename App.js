@@ -21,5 +21,24 @@ import ReactDOM from "react-dom/client";
 const jsxHeading = (<h1 id= "heading" className = "heading">Namaste React using JSX🚀</h1> )//This code is transpiled by babel before it reaches JS Engine
 // JSX => Bable converts JSX toReact.createElement => Object => HTML element
 
+const number = 1000;
+
+const HeadingComponent = () => {
+    return (<div className = "container">
+                <h1 id= "heading" className = "heading">React Funtional Component</h1>
+            </div>
+    )
+}
+
+const HeadingComponent2 = () => (
+    <div className = "container">
+        {number}
+        {2 + 3}
+        {HeadingComponent()}
+        {/* We can write JavaScript expressions inside these curly braces */}
+        <HeadingComponent />
+        <h1 id="heading">Namaste React using JSX🚀</h1>
+    </div>
+)
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<HeadingComponent2 />);

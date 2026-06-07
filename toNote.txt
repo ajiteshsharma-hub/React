@@ -26,5 +26,12 @@ Consistent Hashing
 Differentiate Bundling - to support older browsers
 Diagnostic
 Tree shaking - it will remove unused code
+browsersList
+We can replace npx parcel index.html with npm run start by configuring scripts in package.json
+jsx
+JSX is not html inside javascript it looks like html
+ All the attributes in jsx are written in camel case
+React components
+When we put or render component inside another component it is called component composition
 
 
