@@ -18,10 +18,12 @@ const Body = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=23.282328&lng=77.4411702&carousel=true&third_party_vendor=1");
-            const data = response.data;
-            setListOfRestaurants(data?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-            setFilteredRestaurants(data?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.25050&lng=77.40650&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+            const json = await data.json();
+            console.log(json);
+
+            setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            setFilteredRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         }
         catch(err){
             console.error("Error fetching restaurant data: ", err);
