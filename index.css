@@ -1,97 +1,96 @@
-.body{
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
-.header{
-    display: flex;
-    border: 0.5px solid black;
-    padding: 5px;
-    justify-content: space-between;
-    background-color: white;
-}
-
-.logo > img{
-    width: 200px;
+.header {
+  display: flex;
+  border: 0.5px solid black;
+  padding: 5px;
+  justify-content: space-between;
+  background-color: white;
 }
 
-.nav-items{
-    display: flex;
-    padding-top: 40px;
-}
-.nav-items > ul{
-    display:flex;
-    gap: 20px;
-    list-style-type: none;
-    padding-right: 20px;
+.logo > img {
+  width: 200px;
 }
 
-.nav-items > ul > li{
-    cursor: pointer;
-} 
-
-.nav-items > ul > li:hover{
-    color: #007BFF;
-    cursor: pointer;
-} 
-
-.search{
-    padding: 10px;
+.nav-items {
+  display: flex;
+  padding-top: 40px;
+}
+.nav-items > ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding-right: 20px;
 }
 
-.search > input{
-    height: 30px;
-    width: 30%;
-}
-.search > input:hover{
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+.nav-items > ul > li {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.restaurant-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px
+.nav-items > ul > li:hover {
+  color: #007bff;
+  cursor: pointer;
 }
 
-.restaurant-card{
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    background-color: whitesmoke;
+.search {
+  padding: 10px;
 }
 
-.restaurant-card:hover{
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    cursor: pointer;
-    border-radius:10px;
+.search > input {
+  height: 30px;
+  width: 30%;
 }
-.restaurant-image{
-    width: 100%;
-}
-
-.shimmer-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.search > input:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-.shimmer-card{
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 500px;
-    background-color: #e0e0e0;
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.login{
-    height: 30px;
+.restaurant-card {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  background-color: whitesmoke;
 }
 
-.filter{
+.restaurant-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.restaurant-image {
+  width: 100%;
+}
 
-    padding: 10px;
-    width: 100%;
-    height: 50px;
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shimmer-card {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 500px;
+  background-color: #e0e0e0;
+}
+
+.login {
+  height: 30px;
+}
+
+.filter {
+  padding: 10px;
+  width: 100%;
+  height: 50px;
 }
