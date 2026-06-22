@@ -5,12 +5,23 @@ import { MENU_LINK } from "../utils/constants";
 
 const RestaurantMenu = () => {
   const [resData, setResData] = useState(null);
-  const params = useParams();
-  console.log(params);
+  const { resId } = useParams();
+  console.log(resId);
 
   const fetchMenu = async () => {
     try {
-      const response = await fetch(MENU_LINK + { params });
+      const response = await fetch(
+        "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.282328&lng=77.4411702&restaurantId=" +
+          resId,
+      );
+      console.log(response);
+      console.log(response.status);
+      console.log(response.headers.get("content-type"));
+      const text = await response.text();
+
+      console.log(text.substring(0, 500));
+      console.log("Length:", text.length);
+      console.log("Body:", JSON.stringify(text));
       const json = await response.json();
       setResData(json?.data);
       console.log(resData);
