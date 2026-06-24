@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Shimmer from "./Shimmer.js";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus.js";
 
 const Body = () => {
   const [ListOfRestaurants, setListOfRestaurants] = useState([]);
@@ -34,6 +35,16 @@ const Body = () => {
       console.error("Error fetching restaurant data: ", err);
     }
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false)
+    return (
+      <div>
+        <h1>Oops! Looks like you're offline</h1>
+        <h1>Check your internet connection</h1>
+      </div>
+    );
 
   return ListOfRestaurants.length === 0 ? (
     <Shimmer />
