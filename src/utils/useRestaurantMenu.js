@@ -3,9 +3,6 @@ import { MENU_LINK } from "./constants";
 
 const useRestaurantMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const fetchData = async () => {
     try {
@@ -17,6 +14,9 @@ const useRestaurantMenu = (resId) => {
       console.error("Error: " + err);
     }
   };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return resInfo;
 };
 

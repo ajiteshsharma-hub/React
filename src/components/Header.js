@@ -1,53 +1,61 @@
-import React from "react";
+import React, { useContext } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
+  const { loggedInUser } = useContext(UserContext);
   return (
-    <div className="header">
-      <div className="logo">
+    <div className="flex justify-between shadow-xl bg-pink-100">
+      <div className="logo w-56">
         <img src={LOGO_URL} alt="logo" />
       </div>
-      <div className="nav-items">
-        <ul>
-          <li>
+      <div className="nav-items flex items-center mx-4">
+        <ul className="flex">
+          <li className="pr-4  hover:text-blue-400">
             <Link to="/">
               <nav>Home</nav>
             </Link>
           </li>
-          <li>
-            <Link to="/About">
+          <li className="pr-4  hover:text-blue-400">
+            <Link to="/about">
               <nav>About</nav>
             </Link>
           </li>
-          <li>
-            <Link to="/Contact">
+          <li className="pr-4  hover:text-blue-400">
+            <Link to="/contact">
               <nav>Contact</nav>
             </Link>
           </li>
-          <li>
-            <Link to="/Cart">
+          <li className="pr-4  hover:text-blue-400">
+            <Link to="/cart">
               <nav>Cart</nav>
             </Link>
           </li>
-          <li>
-            <Link to="/Profile">
+          <li className="pr-4  hover:text-blue-400">
+            <Link to="/profile">
               <nav>Profile</nav>
             </Link>
           </li>
-          <li>Status: {onlineStatus ? "🟢" : "🔴"}</li>
+          <li className="pr-4  hover:text-blue-400">
+            <Link to="/grocery">
+              <nav>Grocery</nav>
+            </Link>
+          </li>
+          <li className="pr-2">Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <button
-            className="login"
+            className="login pr-2"
             onClick={() => {
               btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
             }}
           >
             {btnName}
           </button>
+          <li className="font-bold">{loggedInUser}</li>
         </ul>
       </div>
     </div>
