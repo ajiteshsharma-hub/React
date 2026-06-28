@@ -8,10 +8,12 @@ const Contact = () => {
       <input
         className="border border-black"
         value={loggedInUser || " "}
+        placeholder="name"
         onChange={(e) => {
           setUserName(e.target.value);
         }}
       />
+      <button>Submit</button>
     </div>
   );
 };
