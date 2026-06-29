@@ -1,0 +1,121 @@
+{
+  "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+  "info": {
+    "id": "386982",
+    "name": "Manohar Dairy",
+    "cloudinaryImageId": "onrthurhbk4ztdnbbpwh",
+    "areaName": "10 No Market",
+    "costForTwo": "₹350 for two",
+    "cuisines": [
+      "Chaat",
+      "Snacks",
+      "Sweets",
+      "Desserts",
+      "Beverages",
+      "Street Food",
+      "Bakery",
+      "South Indian",
+      "pav bhaji",
+      "Chinese"
+    ],
+    "avgRating": 4.7,
+    "veg": true,
+    "parentId": "250194",
+    "avgRatingString": "4.7",
+    "totalRatingsString": "9.1K+",
+    "sla": {
+      "deliveryTime": 35,
+      "lastMileTravel": 6.9,
+      "serviceability": "SERVICEABLE",
+      "slaString": "30-40 mins",
+      "lastMileTravelString": "6.9 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2026-06-29 22:15:00",
+      "opened": true
+    },
+    "badges": {
+      "imageBadges": [
+        {
+          "imageId": "brand_cards/Badges%202026/32_Best%20in%20South%20Indian2026.png",
+          "description": "Top-rated for South Indian, based on user votes."
+        },
+        {
+          "imageId": "newg.png",
+          "description": "Premium gourmet restaurant offering an elevated, high-quality food experience."
+        },
+        {
+          "imageId": "v1695133679/badges/Pure_Veg111.png",
+          "description": "Serves only 100% vegetarian food, with no non-veg items."
+        }
+      ]
+    },
+    "isOpen": true,
+    "aggregatedDiscountInfoV2": {},
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {
+          "badgeObject": [
+            {
+              "attributes": {
+                "description": "Top-rated for South Indian, based on user votes.",
+                "imageId": "brand_cards/Badges%202026/32_Best%20in%20South%20Indian2026.png",
+                "theme": ""
+              }
+            },
+            {
+              "attributes": {
+                "description": "Premium gourmet restaurant offering an elevated, high-quality food experience.",
+                "imageId": "newg.png",
+                "theme": ""
+              }
+            },
+            {
+              "attributes": {
+                "description": "Serves only 100% vegetarian food, with no non-veg items.",
+                "imageId": "v1695133679/badges/Pure_Veg111.png",
+                "theme": ""
+              }
+            }
+          ]
+        },
+        "textBased": {},
+        "textExtendedBadges": {}
+      }
+    },
+    "orderabilityCommunication": {
+      "title": {},
+      "subTitle": {},
+      "message": {},
+      "customIcon": {}
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {},
+    "externalRatings": {
+      "aggregatedRating": {
+        "rating": "--"
+      }
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+  },
+  "analytics": {
+    "context": "seo-data-5e78b838-ef8d-4334-9ab7-b6f395f4e8a4"
+  },
+  "cta": {
+    "link": "https://www.swiggy.com/city/bhopal/manohar-dairy-10-no-market-rest386982",
+    "text": "RESTAURANT_MENU",
+    "type": "WEBLINK"
+  },
+  "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

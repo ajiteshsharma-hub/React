@@ -12,7 +12,7 @@ const ItemList = ({ items }) => {
   return (
     <div>
       {items.map((item) => (
-        <div key={item.card?.info?.id}>
+        <div key={item.card?.info?.id} data-testid="foodItems">
           <div className="border-gray-100 border-b-2 text-left flex justify-between">
             <div className="w-9/12 p-2 m-2">
               <span className="text-md font-semibold">
